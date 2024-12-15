@@ -2,30 +2,36 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import TopList from './components/TopList';
+import Products from './components/Products';
+import TopProduct from './components/TopProduct';
 import Banner from './components/Banner';
-import OurServices from './components/OurServices';
+import Subscribe from './components/Subscribe';
+import Carousel from './components/Carousel';
+import Winter from './components/Winter';
+import Footer from './components/Footer';
 
-const bgStyle = {
-            backgroundImage : `url(${"pexels.jpg"})`,
-            backgroundRepeat : "no-repeat",
-            backgroundSize : "cover",
-            backgroundPosition : "center",
-};
 
 
 function App() {
+   
+    
+
   return (
-    <div   className="overflow-x-hidden">
+    <div   className="app ">
+         
+         <Navbar></Navbar>
+         <Hero></Hero>
+         <Products></Products>
+         <TopProduct></TopProduct>
+         <Banner></Banner>
+        <Subscribe></Subscribe>
+        <Carousel></Carousel>
+        <Winter></Winter>
+        <Footer></Footer>
+     
+       
         
-        <div style={bgStyle} className='min-h-screen bg-white/5  backdrop-blur-md ' >
-        <Navbar></Navbar>
-      <Hero></Hero>
-      <TopList></TopList>
-      <Banner></Banner>
-      
-        </div>
-        <OurServices></OurServices>
+        
         
     </div>
   );
