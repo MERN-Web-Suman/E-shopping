@@ -1,140 +1,101 @@
 
 import React from 'react'
-import { FaStar } from "react-icons/fa";
 
 export default function Products() {
   return (
-    <div className='mt-14 mb-12' >
-
-          <div className='container' >
+    <div>
+        <div className="container">
             {/* Header section */}
+               <div className='text-center justify-center'>
+                <h1>Our Products</h1>
+                <p>Explore Our Products</p>
+               </div>
 
-            <div className='text-center mb-10 max-w-[600px] mx-auto ' >
+               {/* Cards sections */}
 
-                  <p  className='tex-sm text-[#fea928] ' >Top Selling Product For You</p>
+               <div className='mb-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gpap-5 place-items-center'>
+                     
+                     <div className='group'>
 
-                  <h1  className='text-3xl font-bold' >Product</h1>
-
-                  <p className='text-xs text-gray-600 ' >Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Aliquam debitis ipsam sit possimus,
-                      eos quis pariatur impedit dolor magni harum.
-                      </p>
-            </div>
-                   {/* Body section */}
-                   
-                   <div>
-                    <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5  place-items-center gap-5 ' >
-                        
-                        {/* Card section */}
+                        <div className='relative'>
+                            <img src="p-3.jpg" className='h-[180px] w-[260px] object-cover rounded-md ' />
                             
-                            <div 
-                                  className='space-y-3' >
+                                {/* hover button */}
 
-                                    <img src="women.png" className='h-[220px] w-[150px] object-cover rounded-md hover:scale-110 hover:shadow-2xl duration-300 ' />
-                                          
-                                          <div>
-                                            <h3 className='font-semibold ' >Women Ethnic</h3>
+                            <div className=' hidden group-hover:flex  absolute top-1/2  -translate-y-1/2 left-1/2 -translate-x-1/2 w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 '>
 
-                                            <p className='text-sm text-gray-600 ' >white</p>
+                                <button className='py-2 px-4 rounded hover:scale-110  duration-300 bg-[red] text-white '>Add to Cart</button>
+                                </div>
+                        </div>
+                        <div className='leading-7'>
+                            <h2 className='font-semibold'>Boat Headphone</h2>
+                            <h2 className='font-bold'>$120 <span className='text-gray-500 line-through text-sm'>$250 ,</span> <span className='text-[#5CB338] text-sm'>83% off</span> </h2>
+                        </div>
 
-                                            <div className='flex items-center gap-1 ' >
-                                               
-                                            <FaStar className='text-yellow-400' />
-                                            <span>5.0</span>
-                                            </div>
-                                          </div>
-                                       
-                                  </div>
+                        </div>
 
-                                  <div 
-                                  className='space-y-3' >
+                        <div className='group'>
 
-                                    <img src="women2.jpg" className='duration-300 hover:scale-110 hover:shadow-2xl h-[220px] w-[150px] object-cover rounded-md ' />
-                                          
-                                          <div>
-                                            <h3 className='font-semibold ' >printedT-shirt</h3>
+                        <div className='relative'>
+                            <img src="p-4.jpg" className='h-[180px] w-[260px] object-cover rounded-md ' />
+                            
+                                {/* hover button */}
 
-                                            <p className='text-sm text-gray-600 ' >yellow</p>
+                            <div className=' hidden group-hover:flex  absolute top-1/2  -translate-y-1/2 left-1/2 -translate-x-1/2 w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 '>
 
-                                            <div className='flex items-center gap-1 ' >
-                                               
-                                            <FaStar className='text-yellow-400' />
-                                            <span>4.4</span>
-                                            </div>
-                                          </div>
-                                       
-                                  </div>
+                                <button className='py-2 px-4 rounded hover:scale-110  duration-300 bg-[red] text-white '>Add to Cart</button>
+                                </div>
+                        </div>
+                        <div className='leading-7'>
+                            <h2 className='font-semibold'>Rocky Mountain</h2>
+                            <h2 className='font-bold'>$420 <span className='text-gray-500 line-through text-sm'>$310 ,</span>  <span className='text-[#5CB338] text-sm'>43% off</span> </h2>
+                        </div>
 
+                        </div>
 
-                                  <div 
-                                  className='space-y-3' >
+                        <div className='group'>
 
-                                    <img src="women3.jpg" className='duration-300 hover:scale-110 hover:shadow-2xl h-[220px] w-[150px] object-cover rounded-md ' />
-                                          
-                                          <div>
-                                            <h3 className='font-semibold ' >women westen</h3>
+                        <div className='relative'>
+                            <img src="p-5.jpg" className='h-[180px] w-[260px] object-cover rounded-md ' />
+                            
+                                {/* hover button */}
 
-                                            <p className='text-sm text-gray-600 ' >Red</p>
+                            <div className=' hidden group-hover:flex   absolute top-1/2  -translate-y-1/2 left-1/2 -translate-x-1/2 w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200'>
 
-                                            <div className='flex items-center gap-1 ' >
-                                               
-                                            <FaStar className='text-yellow-400' />
-                                            <span>4.2</span>
-                                            </div>
-                                          </div>
-                                       
-                                  </div>
+                                <button className='py-2 px-4 rounded hover:scale-110  duration-300 bg-[red] text-white '>Add to Cart</button>
+                                </div>
+                        </div>
+                        <div className='leading-7'>
+                            <h2 className='font-semibold'>Goggles</h2>
+                            <h2 className='font-bold'>$150 <span className='text-gray-500 line-through text-sm'>@199 ,</span> <span className='text-[#5CB338] text-sm'>65% off</span> </h2>
+                        </div>
 
-                                  <div 
-                                  className='space-y-3' >
-
-                                    <img src="women4.jpg" className='duration-300 hover:scale-110 hover:shadow-2xl h-[220px] w-[150px] object-cover rounded-md ' />
-                                          
-                                          <div>
-                                            <h3 className='font-semibold ' >Goggles</h3>
-
-                                            <p className='text-sm text-gray-600 ' >Brown</p>
-
-                                            <div className='flex items-center gap-1 ' >
-                                               
-                                            <FaStar className='text-yellow-400' />
-                                            <span>4.7</span>
-                                            </div>
-                                          </div>
-                                       
-                                  </div>
-                                  
-                                  <div 
-                                  className='space-y-3' >
-
-                                    <img src="women2.jpg" className=' hover:scale-110 hover:shadow-2xl h-[220px] w-[150px] duration-300 object-cover rounded-md ' />
-                                          
-                                          <div>
-                                            <h3 className='font-semibold ' >Fashion T-shirt</h3>
-
-                                            <p className='text-sm text-gray-600 ' >pink</p>
-
-                                            <div className='flex items-center gap-1 ' >
-                                               
-                                            <FaStar className='text-yellow-400' />
-                                            <span>4.5</span>
-                                            </div>
-                                          </div>
-                                       
-                                  </div>
-                    </div>
-                   </div>
-                          
-                        {/* view all button */}
-          <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md hover:scale-110 hover:shadow-2xl duration-200 ">
-              View All Products
-            </button>
-          </div>
+                        </div>
 
 
+                        <div className='group'>
 
-          </div>
+                        <div className='relative'>
+                            <img src="p-7.jpg" className='h-[180px] w-[260px] object-cover rounded-md ' />
+                            
+                                {/* hover button */}
+
+                            <div className='  hidden group-hover:flex  absolute top-1/2  -translate-y-1/2 left-1/2 -translate-x-1/2 w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 '>
+
+                                <button className='py-2 px-4 rounded hover:scale-110  duration-300 bg-[red] text-white '>Add to Cart</button>
+                                </div>
+                        </div>
+                        <div className='leading-7'>
+                            <h2 className='font-semibold'>Printed</h2>
+                            <h2 className='font-bold'>$120 <span className='text-sm text-gray-500 line-through'>$199 ,</span> <span className='text-[#5CB338] text-sm'>53% off</span> </h2>
+                        </div>
+
+                        </div>
+                    
+                </div>
+               </div>
+        </div>
     </div>
   )
 }

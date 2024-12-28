@@ -1,57 +1,30 @@
 
 import React from 'react'
-import Slider from "react-slick";
 
 export default function Hero() {
   return (
+    <div className='container'>
+        <div className=' overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] flex justify-center items-center bg-gradient-to-t from-gray-300/80 to-gray-100 ' >
+            {/* Hero section */}
+            <div className=' container pb-8 sm:pb-0  '>
 
-    <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center  ' >
-        
-                {/* background pattern */}
-
-        <div className='h-[700px] w-[700px] bg-primary/60 absolute -top-1/2 right-0  md:right-24 rounded-3xl rotate-45 -z-9 ' >
-
-        </div>
-            
-            {/* hero section */}
-
-            
-
-            <div className='container pb-8 sm:pb-0 ' >
-
-                
-
-                <div className='grid grid-cols-1 sm:grid-cols-2  ' >
-
-                    {/* text content section */}
-
-                    <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left   relative z-10 ' >
-
-                        <h3 className='text-5xl sm:text-6xl lg:text-7xl font-bold ' >70% off on all Products Sale</h3>
-
-                        <p className='text-sm'  >
-                            Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
-                        </p>
-                        <div  >
-                            <button className='bg-gradient-to-r from-violet-500 to-fuchsia-500  hover:from-violet-500 hover:to-yellow-500  hover:scale-110 duration-300 text-white py-2 px-4 rounded-full' >
-                                Order Now
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* image section */}
-
-                    <div className='order-1 sm:order-2' >
-
-                        <div className='relative z-10' >
-                            
-                            <img src="women.png" className=' text-white w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto ' />
-                        </div>
+              <div className='grid grid-col-1 sm:grid-cols-2' >
+                {/* text contact section */}
+                <div className='flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left  sm:order-1 relative z-10 ' >
+                    <h1 className='text-2xl sm:text-6xl lg:text-2xl font-bold'>Beats Solo</h1>
+                    <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>Wireless</h1>
+                    <h1 className='text-5xl uppercase text-white sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold '>Headphone</h1>
+                    <div>
+                        <button className='cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10 bg-[#FB4141]'>Shop Now</button>
                     </div>
                 </div>
-
-            </div>
-
+                {/* Img section */}
+                <div className='order-2 sm:order-2'>
+                    <img src="headphone.png" className='w-[300px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40 ' />
+                </div>
+              </div>
+              </div>
+        </div>
     </div>
   )
 }

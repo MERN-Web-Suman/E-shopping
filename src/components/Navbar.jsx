@@ -1,134 +1,100 @@
 
 import React from 'react'
-import { CiSearch } from "react-icons/ci";
+import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
-import Darkmode from './Darkmode';
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
-    // lower navbar data
+const MenuLinks = [
+  {
+    id :1,
+    name:"Home",
+    link : "/#",
+  },
 
-    const Menu = [
-        {
-            id :1,
-            name : "Home",
-            link : "/#",
-        },
+  {
+    id:2,
+    name :"Shop",
+    link :"/#",
+  },
 
-        {
-            id :2,
-            name :"Top Reted",
-            link :"Services",
-        },
+  {
+    id:3,
+    name :"About",
+    link :"/#",
+  },
 
-        {
-            id:3,
-            name :"Kids wear",
-            link : "/#",
-        },
+  {
+    id :4,
+    name :"Blogs",
+    link :"/#",
+  },
+];
 
-        {
-            id:4,
-            name :"Mens Wear",
-            link:"/#",
-        },
-        {
-           id :5,
-           name :"Electronices",
-           link :"/#",
-        },
+ const DropdownLink = [
+  {
+    id:1,
+    name :"Trending products",
+    links:"#/",
+  },
+  {
+    id:2,
+    name:"Best selling",
+    links:"/#",
+  },
 
-        {
-            id:6,
-            name:"Fashion",
-            link:"/#",
-        },
-        {
-            id:7,
-            name :"Grocery",
-            link :"/#",
-        },
-        {
-            id :8,
-            name :"Baby Toys",
-            link :"/#",
-        },
-    ];
+  {
+    id:3,
+    name:"Top Rated",
+    links :"/#"
+  },
+ ];
 
 export default function Navbar() {
   return (
+    <div className='bg-white dark:bg-gray-900 dark:text-white' >
 
-    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40 ' >
-        {/* upper navbar */}
+          <div className='py-4'>
+            <div className='container flex justify-between items-center' >
+                {/* logo and links section */}
 
-        <div className='bg-primary/40 py-3 ' >
-
-            <div className='container flex justify-between items-center ' >
-
-                <div>
-                    <a href="#" className='font-bold text-2xl sm:text-3xl flex gap-2 no-underline  ' >
-                        
-                        <img src="logo.png" alt="" className='w-10' />
-                        Shopsy
-                    </a>
-                </div>
-                
-                {/* search bar  */}
-
-                <div className='flex justify-between items-center gap-4 ' >
-
-                    <div className=' relative hidden  sm:flex group' >
-                        <input type="text"
-
-                        placeholder='search '
-                        className='w-[200px] sm:w-[200px] hover:bg-gray-900 hover:text-white group-hover:w-[300px] transition-all duration-300 rounded-full border  px-2 py-1 focus:outline-none focus:border-1 border-primary '
-
-                                             />
-                            <CiSearch  className='text-gray-500 text-bold  group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3 ' />
+                <div className='flex  items-center gap-4' >
+                    <span className='text-red-800 font-semibold tracking-widest text-2xl uppercase sm:text-3xl  ' >E-shop</span>
+                    {/* Menu Items */}
+                    <div className='hidden lg:block' >
+                        <ul className='flex items-center gap-4'>
+                          {
+                            MenuLinks.map((data,index)=>(
+                              <li key={index}>
+                                <a href={data.link} className=' text-gray-500 hover:text-black duration-200 no-underline inline-block px-4 font-semibold' > {data.name} </a>
+                              </li>
+                            ))
+                          }
+                        </ul>
                     </div>
-
-                         {/* order button */}
-                 
-                 <button 
-
-                    className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'
-
-                    onClick={()=>
-                        alert("Ordering not available yet") }
-                    
-                    >
-                    <span className='group-hover:block hidden transition-all duration-200 ' >Order</span>
-                    
-                    <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer ' />
-                    </button>
-
-                    {/* DarkMode button */}
-                          <div>
-                          <Darkmode></Darkmode>
-                          </div>
-                      
-
+  
+  
                 </div>
-            
-                 
+                 {/* Navbar Right SECTION */}
+                 <div className='flex justify-between items-center gap-4'>
+                  {/* Search BAR section */}
+
+                   <div className='relative group hidden sm:block'>
+                    <input type="text" placeholder='Search' className='w-0 group-hover:w-[300px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none focus:border-1   '  /> 
+                    <IoMdSearch className='text-xl text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 group-hover:text-pretty ' />
+                   </div>
+                     {/* Order button section */}
+                       
+                       <button className='relative p-3'>
+                       <FaCartShopping className='text-xl text-gray-600 ' />
+                       <div className='w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs'>
+                        4
+                       </div>
+                       </button>
+
+                 </div>
             </div>
-        </div>
-
-        {/* Lower Navbar */}
-
-        <div className='flex justify-center bg-[#ECEBDE]  ' >
-
-            <ul className='sm:flex hidden items-center gap-8   ' >
-                {
-                    Menu.map((data)=>(
-
-                        <li key={data.id} >
-                            <a href={data.link} className='no-underline  inline-block hover:text-primary duration-300 border-[green] hover:border-b-2  ' >{data.name} </a>
-                        </li>
-                    ))
-                }
-            </ul>
-        </div>
-
-
+          </div>
+     
     </div>
   )
 }
