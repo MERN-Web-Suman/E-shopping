@@ -4,15 +4,17 @@ Welcome to my Reponsitory Ecommerce-shopping in this repository ,I've created th
 
 # Features: 
 
- ✨ Dark and Light mode with ReactJS and Tailwind.
- ✨ Responsive Navbar Using Tailwind.
- ✨ Dropdown Navbar using Tailwind CSS
- ✨ Login Popup using ReactJS.
- ✨ Animate on Scroll.
- ✨ Testimonial Slider.
- ✨ Fully responsive app ( All device supported ).
+ <div>  
+<h4>  ✨ Dark and Light mode with ReactJS and Tailwind. </4>
+<h4> ✨ Responsive Navbar Using Tailwind. </4>
+<h4> ✨ Dropdown Navbar using Tailwind CSS </4>
+<h4> ✨ Login Popup using ReactJS. </4>
+<h4> ✨ Animate on Scroll. </4>
+<h4> ✨ Testimonial Slider. </4>
+<h4> ✨ Fully responsive app ( All device supported ). </4>
+ </div>
 
  #  Technologies Used
 
- ✨ React.js and Tailwind CSS.
+<h4> ✨ React.js and Tailwind CSS. </4>
  
