@@ -2,6 +2,10 @@
 
 Welcome to my Reponsitory Ecommerce-shopping in this repository ,I've created the E-shopping website using React JS and Tailwind CSS.
 
+## 🛒 E-Shopping Live Demo
+
+👉 [Click here to view the live project](https://e-shopping-six-delta.vercel.app/)
+
 # Features: 
 
  <div>  
